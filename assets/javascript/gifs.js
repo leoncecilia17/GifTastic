@@ -1,8 +1,9 @@
 $(document).ready(function () {
 
-    var pastries = ["Donuts", "Cakes", "Cookies", "Croissants"];
+    var topics = ["Donuts", "Cakes", "Cookies", "Croissants"];
 
     function displayPastryInfo() {
+        // removes previous images from list 
         $("#pastry-view").empty(); 
         var pastry = $(this).attr("data-name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pastry + "&api_key=vVHamWQLXMQwmmskv4pEAW0dKY245tEE&limit=10";
@@ -52,11 +53,11 @@ $(document).ready(function () {
 
     function renderButtons() {
         $("#buttons-view").empty();
-        for (var i = 0; i < pastries.length; i++) {
+        for (var i = 0; i < topics.length; i++) {
             var a = $("<button>");
             a.addClass("pastry-btn");
-            a.attr("data-name", pastries[i]);
-            a.text(pastries[i]);
+            a.attr("data-name", topics[i]);
+            a.text(topics[i]);
             $("#buttons-view").append(a);
         }
     }
@@ -64,7 +65,7 @@ $(document).ready(function () {
     $("#add-pastry").on("click", function (event) {
         event.preventDefault();
         var pastry = $("#pastry-input").val().trim();
-        pastries.push(pastry);
+        topics.push(pastry);
         renderButtons();
     });
 

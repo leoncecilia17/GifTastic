@@ -1,4 +1,63 @@
 body {
-    background-color: teal; 
+    background-color: lightseagreen; 
 } 
 
+h1 {
+    color: cornsilk; 
+    font-size: 75px; 
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+#search {
+    font-size: 25px; 
+    font-family: 'Indie Flower', cursive;
+    color: orange; 
+}
+
+#pastrysearch {
+    border-style: solid; 
+    border-width: 5px; 
+    border-color: black; 
+    text-align: center; 
+    width: 500px; 
+    height: 50px; 
+    margin: 10px; 
+    padding: 10px;
+}
+
+.pastry-btn {
+    font-size: 30px; 
+    margin: 7px; 
+    padding: 7px; 
+    font-family: 'Amatic SC', cursive;
+    color: black;  
+}
+
+#add-pastry {
+    font-size: 30px;
+    margin: 7px; 
+    padding: 7px; 
+    color: black; 
+}
+
+.pastryImages {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+p {
+    font-size: 20px; 
+    font-weight: bold; 
+    padding: auto; 
+    font-family: 'Indie Flower', cursive;
+    color: black;  
+    align-content: center; 
+}
+
+.gifs {
+    margin: 10px; 
+    height: 200px; 
+    width: auto; 
+}

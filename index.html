@@ -8,25 +8,31 @@
     <title>Pastry Gifs</title>
 
     <link rel="stylesheet" href="./assets/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <div class="container">
-        <hi>Let's Look at Some Pastries!</hi>
+        <h1>Let's Look at Some Pastries!</h1>
 
+        <div id="pastrysearch">
+            <form id="pastry-form">
+                <label for="gif-input" id="search">Search for a Pastry Here!</label>
+                <input type="text" id="pastry-input">
+
+                <br>
+
+                <input id="add-pastry" type="submit" value="Submit">
+            </form>
+        </div>
+
+    <br>
         <div id="buttons-view"></div>
 
-        <form id="pastry-form">
-            <label for="gif-input">Search for a Pastry Here!</label>
-            <input type="text" id="pastry-input">
-
-            <br>
-
-            <input id="add-pastry" type="submit" value="Submit">
-        </form>
-
-        <div id="pastry-view"></div>
+    <hr>
+        <div id="pastry-view" class="pastryImages"></div>
 
     </div>
 
