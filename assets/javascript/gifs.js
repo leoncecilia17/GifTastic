@@ -39,10 +39,7 @@ $(document).ready(function () {
     }
 
     $(document).on("click", ".gifs", function(){
-        var state = $(this)//.attr("className");
-        console.log(this)
-        console.log(state.attr("data-state"))
-
+        var state = $(this).attr("data-state")
         if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
